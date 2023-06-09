@@ -1,0 +1,97 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.dropzone {
+  background-color: #a9a9a977;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 35%;
+  min-height: 400px;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .dropzone {
+    width: 90%;
+  }
+}
+
+.drag-item {
+  cursor: move;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background: #242424;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+#resetBtn {
+  cursor: pointer;
+  margin: 50px auto;
+  border: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #2c6fbc;
+  letter-spacing: 1px;
+}
+
+#successMessage {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: #1aaf1a;
+  color: white;
+}
